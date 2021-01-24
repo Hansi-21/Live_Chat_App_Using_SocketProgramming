@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtArea" prefHeight="436.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerUiController">
+   <children>
+      <AnchorPane prefHeight="54.0" prefWidth="339.0" style="-fx-background-color: #218c74;">
+         <children>
+            <Label layoutX="66.0" layoutY="8.0" text="Hansani Nimeshika">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="26.0" text="Online">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="305.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="272.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Video.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="237.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/call.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="17.0" layoutY="6.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/1.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#2ed573" layoutX="89.0" layoutY="34.0" radius="4.0" stroke="#2ed573" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="382.0" prefHeight="54.0" prefWidth="339.0" style="-fx-background-color: #218c74;">
+         <children>
+            <TextField fx:id="txtMsg" layoutX="13.0" layoutY="13.0" onAction="#SendMessageEntered" prefHeight="29.0" prefWidth="218.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="304.0" layoutY="14.0" onMouseClicked="#SendOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Sent.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="270.0" layoutY="14.0" onMouseClicked="#AttachOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/attach.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgID" fitHeight="29.0" fitWidth="24.0" layoutX="238.0" layoutY="14.0" onMouseClicked="#ImojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="messageArea" layoutY="54.0" prefHeight="328.0" prefWidth="339.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="txtDate" alignment="CENTER" layoutY="63.0" prefHeight="16.0" prefWidth="339.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
